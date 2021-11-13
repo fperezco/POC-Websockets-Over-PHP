@@ -16,6 +16,8 @@ class SendMessageToClientTestCommand extends Command
     protected static $defaultName = 'SendMessageToClientTest';
     protected static $defaultDescription = 'Add a short description for your command';
     private MessageBusInterface $messageBus;
+    private string $uuid;
+    private string $message;
 
     public function __construct( MessageBusInterface $messageBus,$name = null)
     {
@@ -38,6 +40,8 @@ class SendMessageToClientTestCommand extends Command
         $event = new MessageToUserEvent($uuid,$message);
         $this->messageBus->dispatch($event);*/
 
+        $this->uuid = '456-456-111-111';
+        $this->message = "test message!!!!";
 
         \Ratchet\Client\connect('ws://localhost:8080?uuid=server')->then(function($conn) {
             $conn->on('message', function($msg) use ($conn) {
@@ -45,7 +49,8 @@ class SendMessageToClientTestCommand extends Command
                 $conn->close();
             });
 
-            $conn->send('Hello World!');
+            $conn->send('{"to":"'.$this->uuid.'","message":"'.$this->message.'"}');
+            //$conn->send($this->uuid);
             $conn->close();
             return 0;
         }, function ($e) {

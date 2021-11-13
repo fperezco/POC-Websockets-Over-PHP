@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3ebbb4f-b7ce-4c8d-9f86-cae53a202a93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.docker/apache-php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/apache-php/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/db/data/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/db/data/mysql/ib_logfile0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/db/data/mysql/ib_logfile1" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/db/data/mysql/ib_logfile1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/db/data/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/db/data/mysql/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/db/data/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/db/data/mysql/ibtmp1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sockets2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sockets2021.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Command/SendMessageToClientTestCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/SendMessageToClientTestCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/ServerBasic.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ServerBasic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/ServerBasicCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ServerBasicCommand.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +142,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636819836877</updated>
-      <workItem from="1636819840403" duration="7005000" />
+      <workItem from="1636819840403" duration="8859000" />
     </task>
     <servers />
   </component>
@@ -160,17 +154,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Command/ServerBasic.php</url>
-          <line>12</line>
+          <line>14</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Command/ServerBasic.php</url>
-          <line>40</line>
+          <line>43</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Command/ServerBasicCommand.php</url>
-          <line>41</line>
+          <line>25</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
