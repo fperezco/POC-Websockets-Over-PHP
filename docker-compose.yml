@@ -15,7 +15,7 @@ services:
     working_dir: /var/www/html
     environment:
       PHP_EXTENSION_XDEBUG: 1
-      PHP_INI_XDEBUG__REMOTE_PORT: 9000
+      PHP_INI_XDEBUG__REMOTE_PORT: 39000
       PHP_IDE_CONFIG: "serverName=docker_concurrency"
       XDEBUG_CONFIG: "remote_host=docker.for.mac.localhost remote_enable=on"
     depends_on:

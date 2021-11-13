@@ -12,7 +12,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class ServerBasicCommand extends Command
 {
     protected static $defaultName = 'ServerCommandBasic';
-    protected static $defaultDescription = 'Add a short description for your command';
+    protected static $defaultDescription = 'Websockets server';
 
     protected function configure(): void
     {
