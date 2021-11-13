@@ -7,7 +7,7 @@ use Ratchet\ConnectionInterface;
 
 class ServerBasic implements MessageComponentInterface {
     protected $clients;
-    protected array $clientConnections;
+    public array $clientConnections;
 
     public function __construct() {
         $this->clients = new \SplObjectStorage;
@@ -85,5 +85,20 @@ class ServerBasic implements MessageComponentInterface {
         foreach($this->clientConnections as $key => $value){
             echo $key."\n\n";
         }
+    }
+
+
+    public function sendMessageToClientByUuid(string $clientUuid,string $message){
+
+        echo "sending message to client... $clientUuid ...\n\n";
+/*        if(array_key_exists($clientUuid,$this->clientConnections)){
+            $this->clientConnections[$clientUuid]->send($message);
+        }*/
+
+        foreach ($this->clients as $client) {
+                // The sender is not the receiver, send to each client connected
+                $client->send($message);
+        }
+
     }
 }

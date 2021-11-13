@@ -8,6 +8,11 @@ php composer.phar require symfony/maker-bundle
 
 php bin/console make:command
 
+php composer.phar require messenger
+
 Launch the server:
 
 php bin/console ServerCommandBasic
+
+
+php bin/console SendMessageToClientTest
