@@ -79,4 +79,4 @@ RUN echo "sendmail_path=/usr/bin/msmtp -t" >> /usr/local/etc/php/conf.d/php-send
 # This must match the value for 'hostname' field that you set in ssmtp.conf.
 ###RUN echo "localhost localhost.localdomain" >> /etc/hosts
 
-
+RUN docker-php-ext-install sockets

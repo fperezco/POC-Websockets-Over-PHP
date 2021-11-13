@@ -33,10 +33,25 @@ class SendMessageToClientTestCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $uuid = '456-456-111-111';
+/*        $uuid = '456-456-111-111';
         $message = "test message!!!!";
         $event = new MessageToUserEvent($uuid,$message);
-        $this->messageBus->dispatch($event);
+        $this->messageBus->dispatch($event);*/
+
+
+        \Ratchet\Client\connect('ws://localhost:8080?uuid=server')->then(function($conn) {
+            $conn->on('message', function($msg) use ($conn) {
+                echo "Received: {$msg}\n";
+                $conn->close();
+            });
+
+            $conn->send('Hello World!');
+            $conn->close();
+            return 0;
+        }, function ($e) {
+            echo "Could not connect: {$e->getMessage()}\n";
+        });
+
         return 0;
     }
 }
